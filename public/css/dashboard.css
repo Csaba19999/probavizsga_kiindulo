@@ -1,0 +1,143 @@
+.szakdolgozatoklistazasa{
+    max-width: 100%;
+    margin: auto;
+}
+.listaadmin{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.tablazat-doboz{
+    padding: 20px 20px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+.fejlec{
+    display: grid;
+    grid-template-columns: 15% 25% 25% 25% 10%;
+    grid-template-areas: 's t g o b';
+
+    background-color: black;
+    color: beige;
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: Nunito;
+    padding: 10px 10px;
+}
+.szakdogacime{
+    grid-area: s;
+}
+.tagok{
+    grid-area: t;
+}
+.githublink{
+    grid-area: g;
+}
+.oldallink{
+    grid-area: o;
+}
+.gombok{
+    grid-area: b;
+}
+
+.lista-elem{
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 15% 25% 25% 25% 10%;
+    grid-template-areas: 'se te ge oe be';
+
+    color: black;
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: Nunito;
+    padding: 10px 10px;
+    height: max-content;
+}
+.lista-elem div{
+    padding: 10px 10px;
+}
+.szakdogacime-elem{
+    grid-area: se;
+}
+.tagok-elem{
+    grid-area: te;
+}
+.githublink-elem{
+    grid-area: ge;
+    overflow-wrap: break-word;
+}
+.oldallink-elem{
+    grid-area: oe;
+    overflow-wrap: break-word;
+}
+.gombok-elem{
+    grid-area: be;
+}
+
+.gombok-elem{
+    width: 90%;
+    padding: 0px 0px;
+}
+
+.even{
+    background-color: lightgray;
+}
+.odd{
+    background-color: whitesmoke;
+}
+
+.ujadat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: Nunito;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+.sor{
+    display: grid;
+    max-width: 90%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-areas: 'l l i i i';
+    max-width: 100%;
+}
+.sor label{
+    grid-area: l;
+}
+.sor input{
+    grid-area: i;
+}
+#szakdoga_nev{
+    grid-area: s;
+}
+#tagokneve{
+    grid-area: t;
+}
+#oldallink{
+    grid-area: o;
+}
+#githublink{
+    grid-area: g;
+}
+
+@media screen and (max-width: 850px) {
+    .lista-elem{
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        'se te'
+        'ge oe'
+        'be be';
+    }
+  }
